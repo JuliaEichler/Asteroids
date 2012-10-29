@@ -1,5 +1,5 @@
-int pressureMat1 = 11;
-int pressureMat2 = 12;
+int pressureMat1 = 11;          // pressure mat for each of the two steps (forward and backward movement)
+int pressureMat2 = 12;          
 int val1, val2;
 
 void setup()
@@ -15,7 +15,7 @@ void loop()
   val1 = digitalRead(pressureMat1);
   Serial.print("7");
   Serial.print("-");
-  Serial.println(val1);
+  Serial.println(val1);         // sends 0 or 1 depending on whether someone stands on it or not
   
   delay(100);
   
