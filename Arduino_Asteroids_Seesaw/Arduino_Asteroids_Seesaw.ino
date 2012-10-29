@@ -1,20 +1,20 @@
 // BOARD --- Arduino Mega 2560
 // PORT  --- /dev/tty.usbmodemfa141
 
-int inPin = 2;         // the number of the input pin
-int outPinA = 12;       // the number of the output pin
+int inPin = 2;         // input pin for the tilt sensor
+int outPinA = 12;      // output pins for the leds - just feedback for debugging
 int outPinB = 13;
 
-int LEDstate = HIGH;      // the current state of the output pin
+int LEDstate = HIGH;   // the current state of the output pin
 int reading;           // the current reading from the input pin
 int previous = LOW;    // the previous reading from the input pin
  
-// the follow variables are long's because the time, measured in miliseconds,
+// the following variables are long's because the time, measured in miliseconds,
 // will quickly become a bigger number than can be stored in an int.
 long time = 0;         // the last time the output pin was toggled
-long debounce = 50;   // the debounce time, increase if the output flickers
+long debounce = 50;    // the debounce time, increase if the output flickers
 
-int left, right;      // turn direction
+int left, right;       // turn direction
  
 void setup()
 {
