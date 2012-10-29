@@ -20,7 +20,7 @@ void setup()
 {
   Serial.begin(9600);
   pinMode(inPin, INPUT);
-  digitalWrite(inPin, HIGH);   // turn on the built in pull-up resistor
+  digitalWrite(inPin, HIGH);   // set initial value
   pinMode(outPinA, OUTPUT);
   pinMode(outPinB, OUTPUT);
 }
