@@ -1,7 +1,7 @@
 // BOARD --- Arduino Uno
 // PORT  --- /dev/tty.usbmodemfd141
 
-int shootPin = 9;   // Button connected to pin 2
+int shootPin = 9;                        // Button in gun connected to pin 9 on Arduino
 int shootVal;
 
 void setup() {
@@ -16,7 +16,7 @@ void loop() {
   Serial.print("5");
   Serial.print("-");
   
-  if(shootVal == 1){
+  if(shootVal == 1){                     // send 0 or 1 if button is triggered or not
     Serial.println("0");
   }
   else
