@@ -11,5 +11,4 @@ Each of the Arduino_ folders contain the code that was uploaded on the respectiv
 The Processing_Asteroids_Game.pde (in the Processing_ folder) ran on the computer that received the data from the Arduinos and was connected to a projector to display the game.
 
 *Arduino version* 1.0.1
-
 *Processing version* 1.5.1
